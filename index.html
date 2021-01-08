@@ -3,35 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Times Table</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <label for="multiplier">Multiplier</label>
-  <input id="multiplier" type="range" value="2" min="2" max="100" step="1">
+  <div id="side-options">
+    <h2>Settings</h2>
 
-  <label for="points">Graph Points</label>
-  <input id="points" type="range" value="10" min="10" max="200" step="10">
+    <div class="input">
+      <label for="multiplier">Multiplier: <span></span></label>
+      <br >
+      <input id="multiplier" type="range" value="2" min="2" max="100" step="1">
+    </div>
+    
+    <div class="input">
+      <label for="points">Graph Points: <span></span></label>
+      <br >
+      <input id="points" type="range" value="10" min="10" max="300" step="10">
+    </div>
 
-  <label for="points">Graph Color</label>
-  <input id="color" type="color">
+    <div class="input">
+      <label for="points">Graph Color</label>
+      <br >
+      <input id="color" type="color">
+    </div>
 
+    <button>Download Image</button>
+  </div>
+  
   <div id="graph"></div>
+
 </body>
 
 <script src="index.js" type="module"></script>
-
-<style>
-  html, body {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-  }
-
-  #graph {
-    height: 99%;
-    width: 100%;
-  }
-</style>
 
 </html>

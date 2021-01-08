@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-cytoscape-expand-collapse@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/cytoscape-expand-collapse/-/cytoscape-expand-collapse-4.0.0.tgz#fdf02f3ea8312dc87daf7f66a642f9380fa00d7e"
-  integrity sha512-xfL0el1hjsnFlrC8VIaW4xs+ijUXcnFuexzXSZI1qqa2BRoLIRtF5hJSU2uV494hHNHDdwYdDd+K6BB84IS9EQ==
-
 cytoscape@^3.17.1:
   version "3.17.1"
   resolved "https://registry.yarnpkg.com/cytoscape/-/cytoscape-3.17.1.tgz#da2dd84035db1bcfcff84989ff87f3f841ea01cc"

@@ -25,12 +25,22 @@ function drawGraph() {
   const multiplier = +multiplierInput.value;
   const color = colorInput.value;
 
+  document.querySelector('label[for="points"] span').innerHTML =
+    pointsInput.value;
+  document.querySelector('label[for="multiplier"] span').innerHTML =
+    multiplierInput.value;
+
   graph = cytoscape({
-    container: document.getElementById("graph"), // container to render in
+    container: document.getElementById("graph"),
     layout: { name: "circle" },
+    userPanningEnabled: false,
 
     elements: {
-      nodes: [...Array(points)].map((_, i) => ({ data: { id: `${i}` } })),
+      nodes: [...Array(points)].map((_, i) => ({
+        data: { id: `${i}` },
+        grabbable: false,
+      })),
+
       edges: [
         ...new Set(
           [...Array(points)].map((_, i) =>
@@ -66,3 +76,12 @@ function drawGraph() {
     ],
   });
 }
+
+document.querySelector("button").addEventListener("click", () => {
+  const png64 = graph.png();
+
+  const a = document.createElement("a");
+  a.href = png64;
+  a.download = `${multiplierInput.value}_times_table_${pointsInput.value}pts.png`;
+  a.click();
+});
