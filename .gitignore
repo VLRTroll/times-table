@@ -15,3 +15,6 @@ assets/
 
 # Yarn Integrity file
 .yarn-integrity
+
+# VSCode Config
+.vscode/

@@ -1,5 +1,3 @@
-import cytoscape from "./node_modules/cytoscape/dist/cytoscape.esm.min.js";
-
 let graph = null;
 
 const pointsInput = document.getElementById("points");
