@@ -1,6 +1,6 @@
 # Times Table Website
 
-A simple [website](times-table-vlrtroll.vercel.app/) inspired on the video below, where it's presented a times table visuallization concept. With this visuallization it's possible to create pretty screenshots and enjoy a little bit of the beauty of math.
+A simple [website](https://times-table-vlrtroll.vercel.app/) inspired on the video below, where it's presented a times table visuallization concept. With this visuallization it's possible to create pretty screenshots and enjoy a little bit of the beauty of math.
 <br/><br/>
 
 ### 🎬 Tabuada de Multiplicacão, Mandelbrot e o Coração da Matemática
